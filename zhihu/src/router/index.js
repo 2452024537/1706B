@@ -32,9 +32,10 @@ const routes = [
     component: Main,
     children: [{
       path: '/main/home',
+      redirect: '/main/home/attention',
       component: Home,
       children: [{
-        path: '/main/home/:type?',
+        path: '/main/home/:type',
         component: Type
       }]
     },{
